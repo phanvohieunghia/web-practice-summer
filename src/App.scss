@@ -1,0 +1,20 @@
+._header {
+  height: 60px;
+  background-color: red;
+}
+._body {
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  ._left-menu {
+    width: 300px;
+    height: 100%;
+    background-color: blue;
+  }
+  ._main {
+    flex-grow: 1;
+    background-color: yellow;
+  }
+}
