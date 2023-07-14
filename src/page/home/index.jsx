@@ -20,8 +20,10 @@ const Home = () => {
       setData(res);
     });
   }, []);
+
   return (
     <div className="home-page">
+      <div className="title">Home</div>
       <Table data={data?.data || []} column={columns} />
     </div>
   );

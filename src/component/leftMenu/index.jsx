@@ -6,14 +6,13 @@ const LeftMenu = (props) => {
   const { data } = props;
 
   const { pathname } = useLocation();
-  console.log(location);
 
   return (
     <div className="left-menu">
       {data.map((_, i) => (
         <Link to={_.key} key={i}>
           <div className={clsx("item", pathname === _.key && "active")}>
-            {_.name}
+            {_.icon} {_.name}
           </div>
         </Link>
       ))}
