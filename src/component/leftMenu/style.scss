@@ -1,10 +1,10 @@
 .left-menu {
-  padding: 10px;
-  .item {
-    padding: 10px;
-    border-radius: 4px;
-    &.active {
-      background-color: #ddd;
-    }
-  }
+	padding: 10px;
+	.item {
+		padding: 10px;
+		border-radius: 4px;
+		&.active {
+			background-color: #ddd;
+		}
+	}
 }

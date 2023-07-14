@@ -1,14 +1,14 @@
-import { useMemo } from "react";
-import LeftMenu from "@/component/leftMenu";
-import "./style.scss";
-import { Outlet } from "react-router-dom";
-import { GrHomeRounded } from "react-icons/gr";
+import { useMemo } from 'react';
+import LeftMenu from '@/component/leftMenu';
+import './style.scss';
+import { Outlet } from 'react-router-dom';
+import { GrHomeRounded } from 'react-icons/gr';
 
 export const MainLayout = () => {
 	const data = useMemo(
 		() => [
-			{ name: "Home", key: "/", icon: <GrHomeRounded /> },
-			{ name: "Bank", key: "/bank", icon: <GrHomeRounded /> },
+			{ name: 'Home', key: '/', icon: <GrHomeRounded /> },
+			{ name: 'Bank', key: '/bank', icon: <GrHomeRounded /> },
 		],
 		[]
 	);

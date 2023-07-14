@@ -1,19 +1,19 @@
 ._header {
-  height: 60px;
-  border-bottom: 1px solid #999;
+	height: 60px;
+	border-bottom: 1px solid #999;
 }
 ._body {
-  position: fixed;
-  top: 60px;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  ._left-menu {
-    width: 300px;
-    border-right: 1px solid #999;
-    height: 100%;
-  }
-  ._main {
-    flex-grow: 1;
-  }
+	position: fixed;
+	top: 60px;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	._left-menu {
+		width: 300px;
+		border-right: 1px solid #999;
+		height: 100%;
+	}
+	._main {
+		flex-grow: 1;
+	}
 }
