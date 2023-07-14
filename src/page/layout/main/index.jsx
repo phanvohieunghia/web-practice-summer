@@ -2,12 +2,9 @@ import { useMemo } from 'react';
 import LeftMenu from '@/component/leftMenu';
 import './style.scss';
 import { Outlet } from 'react-router-dom';
-import Modal from '@/component/modal';
-import { useSelector } from 'react-redux';
+import RootModal from '@/component/modal/RootModal';
 
 export const MainLayout = () => {
-	const modal = useSelector((state) => state.modal);
-
 	const data = useMemo(
 		() => [
 			{ name: 'Home', key: '/' },
@@ -15,7 +12,6 @@ export const MainLayout = () => {
 		],
 		[]
 	);
-	console.log(modal);
 
 	return (
 		<>
@@ -28,7 +24,7 @@ export const MainLayout = () => {
 					<Outlet />
 				</div>
 			</div>
-			{modal.active && <Modal />}
+			<RootModal />
 		</>
 	);
 };

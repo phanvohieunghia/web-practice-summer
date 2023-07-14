@@ -3,7 +3,8 @@ import UserService from '@/service/user';
 import Table from '@/component/table';
 import './style.scss';
 import { useDispatch } from 'react-redux';
-import { open } from '@/component/modal/store';
+import { close, open } from '@/component/modal/store';
+import { MODALTYPE } from '@/utilities/constant';
 
 const Home = () => {
 	const dispatch = useDispatch();
@@ -26,12 +27,17 @@ const Home = () => {
 	}, []);
 
 	const handleClick = () => {
-		dispatch(open());
+		dispatch(open({ type: MODALTYPE.createSomething, data: 'test' }));
 	};
+	const handleClick2 = () => {
+		dispatch(close());
+	};
+
 	return (
 		<div className="home-page">
 			<Table data={data?.data || []} column={columns} />
-			<button onClick={handleClick}>hello</button>
+			<button onClick={handleClick}>open</button>
+			<button onClick={handleClick2}>close</button>
 		</div>
 	);
 };

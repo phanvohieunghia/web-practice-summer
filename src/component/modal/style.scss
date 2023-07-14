@@ -5,21 +5,39 @@
 	align-items: center;
 	justify-content: center;
 	.modal {
+		border-radius: 5px;
 		background-color: #fff;
-		.modal-header {
-			height: 60px;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(27, 38, 48, 0.25);
+		> div {
 			padding: 10px;
+		}
+		.modal-header {
+			border-radius: 5px 5px 0 0;
+			height: 60px;
 			display: flex;
 			align-items: center;
-			justify-content: space-evenly;
-			border-bottom: 1px solid #999;
+			justify-content: space-between;
+			border-bottom: 1px solid #bbb;
+			span {
+				font-size: 16px;
+				font-weight: 700;
+			}
 		}
 		.modal-body {
+			min-height: 100px;
+			max-height: calc(100vh - 100px);
+			&.empty {
+				border-radius: 0 0 5px 5px;
+			}
 		}
 		.modal-footer {
+			display: flex;
+			justify-content: flex-end;
+			gap: 10px;
+			border-radius: 0 0 5px 5px;
 			height: 60px;
-			padding: 10px;
-			border-top: 1px solid #999;
+			border-top: 1px solid #bbb;
 		}
 	}
 }

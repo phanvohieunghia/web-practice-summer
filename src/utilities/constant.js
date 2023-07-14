@@ -2,4 +2,8 @@ const SLICENAME = {
 	counter: 'counter',
 };
 
-export default { SLICENAME };
+const MODALTYPE = {
+	createSomething: 'CreateSomething',
+};
+
+export { SLICENAME, MODALTYPE };

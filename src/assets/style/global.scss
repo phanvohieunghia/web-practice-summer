@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	// font-size: 14px;
 }
 
 a {
@@ -10,4 +11,30 @@ a {
 }
 body {
 	font-family: sans-serif;
+}
+._icon {
+	width: 20px;
+	height: 20px;
+}
+button {
+	border: none;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	border-radius: 5px;
+	background-color: #eee;
+	min-width: 100px;
+	&:hover {
+		cursor: pointer;
+		background-color: #ddd;
+	}
+	&.icon {
+		min-width: unset;
+		border-radius: 50%;
+		background-color: unset;
+		display: inline-flex;
+		&:hover {
+			background-color: #1b26301a;
+		}
+	}
 }
