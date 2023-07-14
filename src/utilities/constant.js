@@ -1,5 +1,5 @@
 const SLICENAME = {
-  counter: "counter",
+	counter: 'counter',
 };
 
 export default { SLICENAME };
