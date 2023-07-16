@@ -1,7 +1,7 @@
-import './style.scss';
+import './style.scss'
 
 const Table = (props) => {
-	const { data, column } = props;
+	const { data, column } = props
 
 	return (
 		<table className="_table">
@@ -17,14 +17,14 @@ const Table = (props) => {
 					return (
 						<tr key={i}>
 							{column.map((cell, j) => {
-								return <td key={j}>{row[cell.key]}</td>;
+								return <td key={j}>{row[cell.key]}</td>
 							})}
 						</tr>
-					);
+					)
 				})}
 			</tbody>
 		</table>
-	);
-};
+	)
+}
 
-export default Table;
+export default Table

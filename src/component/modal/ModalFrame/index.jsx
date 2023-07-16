@@ -1,17 +1,17 @@
-import { close } from '@/component/modal/store';
-import clsx from 'clsx';
-import { IoCloseSharp } from 'react-icons/io5';
-import { useDispatch } from 'react-redux';
-import './style.scss';
+import { close } from '@/component/modal/store'
+import clsx from 'clsx'
+import { IoCloseSharp } from 'react-icons/io5'
+import { useDispatch } from 'react-redux'
+import './style.scss'
 
 const ModalFrame = (props) => {
-	const { width = 400, title = '', action, children } = props;
+	const { width = 400, title = '', action, children } = props
 
-	const dispatch = useDispatch();
+	const dispatch = useDispatch()
 
 	const handleClose = () => {
-		dispatch(close());
-	};
+		dispatch(close())
+	}
 
 	return (
 		<div className="wrap-modal">
@@ -30,13 +30,13 @@ const ModalFrame = (props) => {
 								<button key={i} onClick={_.onClick}>
 									{_.name}
 								</button>
-							);
+							)
 						})}
 					</div>
 				)}
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default ModalFrame;
+export default ModalFrame

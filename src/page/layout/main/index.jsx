@@ -1,9 +1,9 @@
-import { useMemo } from 'react';
-import LeftMenu from '@/component/leftMenu';
-import './style.scss';
-import { Outlet } from 'react-router-dom';
-import Modal from '@/component/modal';
-import Header from '@/component/header';
+import { useMemo } from 'react'
+import LeftMenu from '@/component/leftMenu'
+import './style.scss'
+import { Outlet } from 'react-router-dom'
+import Modal from '@/component/modal'
+import Header from '@/component/header'
 
 export const MainLayout = () => {
 	const data = useMemo(
@@ -12,7 +12,7 @@ export const MainLayout = () => {
 			{ name: 'Bank', key: '/bank' },
 		],
 		[]
-	);
+	)
 
 	return (
 		<>
@@ -29,7 +29,7 @@ export const MainLayout = () => {
 			</div>
 			<Modal />
 		</>
-	);
-};
+	)
+}
 
-export default MainLayout;
+export default MainLayout

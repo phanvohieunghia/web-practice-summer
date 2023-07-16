@@ -1,4 +1,4 @@
-import request from './index';
+import request from './index'
 
 class UserService {
 	static getList(params) {
@@ -6,8 +6,8 @@ class UserService {
 			url: 'https://reqres.in/api/users/',
 			method: 'get',
 			params,
-		}).then((res) => res.data);
+		}).then((res) => res.data)
 	}
 }
 
-export default UserService;
+export default UserService

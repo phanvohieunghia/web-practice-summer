@@ -1,13 +1,13 @@
-import Modal from '@/component/modal/ModalFrame';
-import { useDispatch } from 'react-redux';
-import { close } from '@/component/modal/store';
+import Modal from '@/component/modal/ModalFrame'
+import { useDispatch } from 'react-redux'
+import { close } from '@/component/modal/store'
 
 const CreateSomething = () => {
-	const dispatch = useDispatch();
+	const dispatch = useDispatch()
 
 	const closeModal = () => {
-		dispatch(close());
-	};
+		dispatch(close())
+	}
 
 	return (
 		<Modal
@@ -19,7 +19,7 @@ const CreateSomething = () => {
 			<p> helfeof</p>
 			shefoei
 		</Modal>
-	);
-};
+	)
+}
 
-export default CreateSomething;
+export default CreateSomething

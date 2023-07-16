@@ -1,26 +1,26 @@
-import axios from 'axios';
+import axios from 'axios'
 
 const configOption = {
 	// baseURL: API_ROOT,
 	timeout: 5000,
-};
-const instance = axios.create(configOption);
+}
+const instance = axios.create(configOption)
 
 instance.interceptors.request.use(
 	(config) => {
-		return config;
+		return config
 	},
 	(err) => {
-		Promise.reject(err);
+		Promise.reject(err)
 	}
-);
+)
 instance.interceptors.response.use(
 	(response) => {
-		return response;
+		return response
 	},
 	(err) => {
-		return Promise.reject(err);
+		return Promise.reject(err)
 	}
-);
+)
 
-export default instance;
+export default instance

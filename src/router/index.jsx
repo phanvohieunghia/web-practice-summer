@@ -1,7 +1,7 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomePage from '@/page/home';
-import BankPage from '@/page/Bank';
-import MainLayout from '@/page/layout/main';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import HomePage from '@/page/home'
+import BankPage from '@/page/Bank'
+import MainLayout from '@/page/layout/main'
 
 const Router = () => {
 	return (
@@ -13,7 +13,7 @@ const Router = () => {
 				</Route>
 			</Routes>
 		</BrowserRouter>
-	);
-};
+	)
+}
 
-export default Router;
+export default Router

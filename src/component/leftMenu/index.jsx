@@ -1,11 +1,11 @@
-import clsx from 'clsx';
-import './style.scss';
-import { Link, useLocation } from 'react-router-dom';
+import clsx from 'clsx'
+import './style.scss'
+import { Link, useLocation } from 'react-router-dom'
 
 const LeftMenu = (props) => {
-	const { data } = props;
+	const { data } = props
 
-	const { pathname } = useLocation();
+	const { pathname } = useLocation()
 
 	return (
 		<div className="left-menu">
@@ -17,7 +17,7 @@ const LeftMenu = (props) => {
 				</Link>
 			))}
 		</div>
-	);
-};
+	)
+}
 
-export default LeftMenu;
+export default LeftMenu
