@@ -3,6 +3,7 @@ import LeftMenu from '@/component/leftMenu';
 import './style.scss';
 import { Outlet } from 'react-router-dom';
 import Modal from '@/component/modal';
+import Header from '@/component/header';
 
 export const MainLayout = () => {
 	const data = useMemo(
@@ -15,7 +16,9 @@ export const MainLayout = () => {
 
 	return (
 		<>
-			<div className="_header">Header</div>
+			<div className="_header">
+				<Header />
+			</div>
 			<div className="_body">
 				<div className="_left-menu">
 					<LeftMenu data={data} />
