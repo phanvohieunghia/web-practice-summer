@@ -4,6 +4,10 @@ import Table from '@/component/table'
 import './style.scss'
 import { useDispatch } from 'react-redux'
 import { close, open } from '@/component/modal/store'
+import {
+	open as openLoading,
+	close as closeLoading,
+} from '@/component/loading/store'
 import { MODALTYPE } from '@/utilities/constant'
 
 const Home = () => {
@@ -33,11 +37,22 @@ const Home = () => {
 		dispatch(close())
 	}
 
+	const handleClick3 = () => {
+		dispatch(openLoading())
+	}
+	const handleClick4 = () => {
+		dispatch(closeLoading())
+	}
+
 	return (
 		<div className="home-page">
 			<Table data={data?.data || []} column={columns} />
-			<button onClick={handleClick}>open</button>
-			<button onClick={handleClick2}>close</button>
+			<div style={{ display: 'flex', gap: 10, marginTop: 10 }}>
+				<button onClick={handleClick}>open</button>
+				<button onClick={handleClick2}>close</button>
+				<button onClick={handleClick3}>Open Loading</button>
+				<button onClick={handleClick4}>Close Loading</button>
+			</div>
 		</div>
 	)
 }
