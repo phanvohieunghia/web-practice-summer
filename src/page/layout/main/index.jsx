@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import LeftMenu from '@/component/leftMenu';
 import './style.scss';
 import { Outlet } from 'react-router-dom';
-import RootModal from '@/component/modal/RootModal';
+import Modal from '@/component/modal';
 
 export const MainLayout = () => {
 	const data = useMemo(
@@ -24,7 +24,7 @@ export const MainLayout = () => {
 					<Outlet />
 				</div>
 			</div>
-			<RootModal />
+			<Modal />
 		</>
 	);
 };

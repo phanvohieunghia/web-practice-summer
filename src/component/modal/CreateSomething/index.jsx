@@ -1,4 +1,4 @@
-import Modal from '@/component/modal';
+import Modal from '@/component/modal/ModalFrame';
 import { useDispatch } from 'react-redux';
 import { close } from '@/component/modal/store';
 
@@ -17,6 +17,7 @@ const CreateSomething = () => {
 				{ name: 'Close', onClick: closeModal },
 			]}>
 			<p> helfeof</p>
+			shefoei
 		</Modal>
 	);
 };
